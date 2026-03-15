@@ -3,67 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh Kumar | Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <h1>My Portfolio</h1>
-        <nav class="navbar" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="site-header" id="home">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-logo">HK</div>
+                <div>
+                    <p class="brand-name">Hitesh Kumar</p>
+                    <p class="brand-role">Technical Specialist II / Full Stack Developer</p>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <section id="home" class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hi, I'm Hitesh! A passionate developer and designer.</p>
-    </section>
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Tell your professional story and background here.</p>
-    </section>
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Project 1</h3>
-            <p>Description of your project goes here.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="card">
-            <h3>Project 2</h3>
-            <p>Description of your project goes here.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="card">
-            <h3>Project 3</h3>
-            <p>Description of your project goes here.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2026 Hitesh. All rights reserved.</p>
+
+    <main>
+        <section class="hero section">
+            <div class="hero-content">
+                <p class="eyebrow">Full Stack Developer • Open to work</p>
+                <h1>Hi I’m Hitesh Kumar — I build modern web products that scale.</h1>
+                <p class="lead">I deliver robust backend systems, performant React user interfaces, and easy-to-maintain platforms for enterprise teams.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contact">Hire me</a>
+                    <a class="btn btn-secondary" href="hiteshkg26.pdf" target="_blank" download>Download Resume</a>
+                </div>
+                <div class="social-row">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-card-top"><span>Key summary</span></div>
+                <div class="hero-card-body">
+                    <p>Technical Specialist II with 9+ years building production web applications, APIs, and automation systems for fast-growing digital products.</p>
+                    <ul>
+                        <li>Experienced with JavaScript, TypeScript, Node.js, React, Python</li>
+                        <li>Built scalable microservices, CI/CD pipelines, and high-performance UIs</li>
+                        <li>Strong cross-functional collaboration and delivery leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <div class="section-header"><span>About</span><h2>Professional overview</h2></div>
+            <div class="about-grid">
+                <div>
+                    <h3>About me</h3>
+                    <p>I’m a full-stack engineer who loves solving complex problems with clean code, high-quality architecture, and rapid iteration.</p>
+                    <p>My focus is on building reliable backend systems, shipping polished frontend apps, and improving team velocity through automation.</p>
+                </div>
+                <div class="about-stats">
+                    <div><strong>9+</strong><span>Years experience</span></div>
+                    <div><strong>50+</strong><span>Projects delivered</span></div>
+                    <div><strong>10+</strong><span>Teams supported</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section container">
+            <div class="section-header"><span>Experience</span><h2>Recent roles</h2></div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div>
+                        <p class="timeline-meta">2023 - Present</p>
+                        <h3>Technical Specialist II</h3>
+                        <p class="muted">Enterprise SaaS</p>
+                        <ul>
+                            <li>Built microservices with Node.js and Docker to support 100k+ users.</li>
+                            <li>Reduced deployment risk by implementing GitHub Actions + ArgoCD in CI/CD.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div>
+                        <p class="timeline-meta">2020 - 2023</p>
+                        <h3>Software Engineer</h3>
+                        <p class="muted">Digital Product Company</p>
+                        <ul>
+                            <li>Developed React dashboards and REST APIs for order and inventory management.</li>
+                            <li>Improved page performance by 45% through lazy loading and optimized queries.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <div class="section-header"><span>Projects</span><h2>Selected work</h2></div>
+            <div class="card-grid">
+                <article class="project-card">
+                    <div class="tag">Dashboard</div>
+                    <h3>Logistics monitoring platform</h3>
+                    <p>Real-time analytics app with React, Node.js, and PostgreSQL for logistics operations.</p>
+                    <p class="project-meta">React · Node · PostgreSQL · Redis</p>
+                </article>
+                <article class="project-card">
+                    <div class="tag">API Platform</div>
+                    <h3>E-commerce services API</h3>
+                    <p>OAuth-secured microservice API with cart, order, and inventory workflows.</p>
+                    <p class="project-meta">Express · MongoDB · JWT · Stripe</p>
+                </article>
+                <article class="project-card">
+                    <div class="tag">Automation</div>
+                    <h3>CI/CD and deployment automation</h3>
+                    <p>Configured pipeline automation and canary deployment flows for faster release cycles.</p>
+                    <p class="project-meta">GitHub Actions · Docker · Kubernetes</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section container">
+            <div class="section-header"><span>Skills</span><h2>What I build with</h2></div>
+            <div class="skill-grid">
+                <div class="skill">JavaScript</div>
+                <div class="skill">TypeScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">React</div>
+                <div class="skill">Python</div>
+                <div class="skill">SQL/NoSQL</div>
+                <div class="skill">Docker</div>
+                <div class="skill">CI/CD</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <div class="section-header"><span>Contact</span><h2>Let’s talk</h2></div>
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <h3>Get in touch</h3>
+                    <p>Ready to deliver your next product with reliable code and fast iteration.</p>
+                    <ul>
+                        <li>Email: <a href="mailto:hitesh@example.com">hitesh@example.com</a></li>
+                        <li>LinkedIn: <a href="#">linkedin.com/in/hitesh</a></li>
+                        <li><a href="hiteshkg26.pdf" download>Download resume (PDF)</a></li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <label>Your Name<input type="text" placeholder="Your name" required></label>
+                    <label>Your Email<input type="email" placeholder="you@example.com" required></label>
+                    <label>Message<textarea placeholder="Tell me about your project" rows="4" required></textarea></label>
+                    <button class="btn btn-primary" type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Hitesh Kumar. Built with HTML/CSS.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
