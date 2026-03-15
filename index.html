@@ -4,166 +4,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hitesh Kumar | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header" id="home">
-        <div class="header-inner">
-            <div class="brand">
-                <div class="brand-logo">HK</div>
+    <div class="page-shell">
+        <header class="site-header" id="home">
+            <div class="site-brand">
+                <span class="brand-logo">HK</span>
                 <div>
                     <p class="brand-name">Hitesh Kumar</p>
-                    <p class="brand-role">Technical Specialist II / Full Stack Developer</p>
+                    <p class="brand-role">Full Stack Developer</p>
                 </div>
             </div>
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
-            <nav class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
+            <nav class="site-nav">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <section class="hero section">
-            <div class="hero-content">
-                <p class="eyebrow">Full Stack Developer • Open to work</p>
-                <h1>Hi I’m Hitesh Kumar — I build modern web products that scale.</h1>
-                <p class="lead">I deliver robust backend systems, performant React user interfaces, and easy-to-maintain platforms for enterprise teams.</p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#contact">Hire me</a>
-                    <a class="btn btn-secondary" href="hiteshkg26.pdf" target="_blank" download>Download Resume</a>
+        <main>
+            <section class="hero section" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <p class="eyebrow">Crafting thoughtful digital products</p>
+                    <h1 id="hero-title">Hitesh Kumar <span>Full stack engineer</span></h1>
+                    <p class="intro">
+                        I build expressive modern experiences with clean React front-ends, resilient Node APIs,
+                        and cloud automation that keeps teams shipping fast.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#contact">Let’s collaborate</a>
+                        <a class="btn secondary" href="hiteshkg26.pdf" target="_blank" rel="noopener">View my CV</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div>
+                            <p class="meta-label">Experience</p>
+                            <p class="meta-value">9+ years</p>
+                        </div>
+                        <div>
+                            <p class="meta-label">Focus</p>
+                            <p class="meta-value">Product engineering</p>
+                        </div>
+                        <div>
+                            <p class="meta-label">Location</p>
+                            <p class="meta-value">Chandigarh, India</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-row">
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                    <a href="#" target="_blank">Portfolio</a>
-                </div>
-            </div>
-            <div class="hero-card">
-                <div class="hero-card-top"><span>Key summary</span></div>
-                <div class="hero-card-body">
-                    <p>Technical Specialist II with 9+ years building production web applications, APIs, and automation systems for fast-growing digital products.</p>
+                <div class="hero-card">
+                    <div class="hero-badge">Key highlights</div>
+                    <p>
+                        Technical Specialist II with a track record of shipping scalable SaaS features, internal tools,
+                        and automation suites for finance and healthcare platforms.
+                    </p>
                     <ul>
-                        <li>Experienced with JavaScript, TypeScript, Node.js, React, Python</li>
-                        <li>Built scalable microservices, CI/CD pipelines, and high-performance UIs</li>
-                        <li>Strong cross-functional collaboration and delivery leadership</li>
+                        <li>Designed multi-tenant APIs with Node.js, PostgreSQL, and Redis.</li>
+                        <li>Guided teams through React/TypeScript rewrite initiatives.</li>
+                        <li>Mentored engineers and improved deployment cadence via GitHub Actions.</li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="about" class="section container">
-            <div class="section-header"><span>About</span><h2>Professional overview</h2></div>
-            <div class="about-grid">
-                <div>
-                    <h3>About me</h3>
-                    <p>I’m a full-stack engineer who loves solving complex problems with clean code, high-quality architecture, and rapid iteration.</p>
-                    <p>My focus is on building reliable backend systems, shipping polished frontend apps, and improving team velocity through automation.</p>
+            <section id="about" class="section about-section">
+                <div class="section-heading">
+                    <span>About Me</span>
+                    <h2>Professional lens</h2>
                 </div>
-                <div class="about-stats">
-                    <div><strong>9+</strong><span>Years experience</span></div>
-                    <div><strong>50+</strong><span>Projects delivered</span></div>
-                    <div><strong>10+</strong><span>Teams supported</span></div>
+                <div class="about-grid">
+                    <div class="about-card about-photo">
+                        <img src="https://images.unsplash.com/photo-1531891437562-430a1d0cd1f8?auto=format&fit=crop&w=600&q=60" alt="Photo of Hitesh Kumar">
+                    </div>
+                    <div class="about-card about-text">
+                        <p>
+                            I partner with product teams to translate customer needs into measurable features.
+                            My days oscillate between architecting new services, shaping polished UIs, and coaching companions
+                            through clarifying technical direction.
+                        </p>
+                        <p>
+                            A balanced combination of backend depth and front-end intuition lets me stay aligned with
+                            design, infrastructure, and ops partners simultaneously.
+                        </p>
+                        <div class="badge-row">
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>Cloud Ops</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="experience" class="section container">
-            <div class="section-header"><span>Experience</span><h2>Recent roles</h2></div>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div>
-                        <p class="timeline-meta">2023 - Present</p>
-                        <h3>Technical Specialist II</h3>
-                        <p class="muted">Enterprise SaaS</p>
+            <section id="experience" class="section timeline-section">
+                <div class="section-heading">
+                    <span>Experience</span>
+                    <h2>Career highlights</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-year">2023 - Present</span>
+                            <span class="timeline-role">Technical Specialist II</span>
+                        </div>
+                        <p class="timeline-company">Enterprise SaaS · Remote</p>
+                        <div class="timeline-content">
+                            <p>Built event-driven microservices, dashboards, and integrations that keep 100k+ users operational.</p>
+                            <p>Improved release stability with GitHub Actions, Argo CD, and feature flagging.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-year">2020 - 2023</span>
+                            <span class="timeline-role">Software Engineer</span>
+                        </div>
+                        <p class="timeline-company">Digital product studio</p>
+                        <div class="timeline-content">
+                            <p>Delivered React dashboards and Node APIs for logistics and analytics clients.</p>
+                            <p>Cut load times 45% through lazy loading, caching, and query tuning.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-year">2017 - 2020</span>
+                            <span class="timeline-role">Full Stack Developer</span>
+                        </div>
+                        <p class="timeline-company">Growth-stage fintech</p>
+                        <div class="timeline-content">
+                            <p>Shipped end-to-end product experiences from prototype to production.</p>
+                            <p>Led code reviews, mentoring, and automated testing efforts across the organization.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="section projects-section">
+                <div class="section-heading">
+                    <span>Projects</span>
+                    <h2>Selected work</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Inventory intelligence</h3>
+                        <p>Real-time logistics platform with monitoring, alerts, and analytics.</p>
+                        <div class="project-meta">
+                            <span>React</span>
+                            <span>Node</span>
+                            <span>Postgres</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Payments control center</h3>
+                        <p>Operation cockpit for reconciliation, aside workflows, and takt monitoring.</p>
+                        <div class="project-meta">
+                            <span>TypeScript</span>
+                            <span>Serverless</span>
+                            <span>Stripe</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>CI/CD automation</h3>
+                        <p>Deployment guardrails, canary releases, and self-healing pipelines.</p>
+                        <div class="project-meta">
+                            <span>GitHub Actions</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>API orchestration suite</h3>
+                        <p>OAuth-based service for marketplace operations and inventory sync.</p>
+                        <div class="project-meta">
+                            <span>Express</span>
+                            <span>Redis</span>
+                            <span>JWT</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills-section">
+                <div class="section-heading">
+                    <span>Skills</span>
+                    <h2>What I lean on</h2>
+                </div>
+                <div class="skills-grid">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>AWS</span>
+                    <span>Docker</span>
+                    <span>GitHub Actions</span>
+                    <span>Figma</span>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact-section">
+                <div class="section-heading">
+                    <span>Contact</span>
+                    <h2>Say hello</h2>
+                </div>
+                <div class="contact-layout">
+                    <div class="contact-card">
+                        <p>Let’s talk about how we can ship your next experience faster.</p>
                         <ul>
-                            <li>Built microservices with Node.js and Docker to support 100k+ users.</li>
-                            <li>Reduced deployment risk by implementing GitHub Actions + ArgoCD in CI/CD.</li>
+                            <li>Email: <a href="mailto:hitesh@example.com">hitesh@example.com</a></li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener">linkedin.com/in/hiteshkumar</a></li>
+                            <li>Resume: <a href="hiteshkg26.pdf" download>Download PDF</a></li>
                         </ul>
                     </div>
-                </article>
-                <article class="timeline-item">
-                    <div>
-                        <p class="timeline-meta">2020 - 2023</p>
-                        <h3>Software Engineer</h3>
-                        <p class="muted">Digital Product Company</p>
-                        <ul>
-                            <li>Developed React dashboards and REST APIs for order and inventory management.</li>
-                            <li>Improved page performance by 45% through lazy loading and optimized queries.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="projects" class="section container">
-            <div class="section-header"><span>Projects</span><h2>Selected work</h2></div>
-            <div class="card-grid">
-                <article class="project-card">
-                    <div class="tag">Dashboard</div>
-                    <h3>Logistics monitoring platform</h3>
-                    <p>Real-time analytics app with React, Node.js, and PostgreSQL for logistics operations.</p>
-                    <p class="project-meta">React · Node · PostgreSQL · Redis</p>
-                </article>
-                <article class="project-card">
-                    <div class="tag">API Platform</div>
-                    <h3>E-commerce services API</h3>
-                    <p>OAuth-secured microservice API with cart, order, and inventory workflows.</p>
-                    <p class="project-meta">Express · MongoDB · JWT · Stripe</p>
-                </article>
-                <article class="project-card">
-                    <div class="tag">Automation</div>
-                    <h3>CI/CD and deployment automation</h3>
-                    <p>Configured pipeline automation and canary deployment flows for faster release cycles.</p>
-                    <p class="project-meta">GitHub Actions · Docker · Kubernetes</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="skills" class="section container">
-            <div class="section-header"><span>Skills</span><h2>What I build with</h2></div>
-            <div class="skill-grid">
-                <div class="skill">JavaScript</div>
-                <div class="skill">TypeScript</div>
-                <div class="skill">Node.js</div>
-                <div class="skill">React</div>
-                <div class="skill">Python</div>
-                <div class="skill">SQL/NoSQL</div>
-                <div class="skill">Docker</div>
-                <div class="skill">CI/CD</div>
-            </div>
-        </section>
-
-        <section id="contact" class="section container">
-            <div class="section-header"><span>Contact</span><h2>Let’s talk</h2></div>
-            <div class="contact-grid">
-                <div class="contact-box">
-                    <h3>Get in touch</h3>
-                    <p>Ready to deliver your next product with reliable code and fast iteration.</p>
-                    <ul>
-                        <li>Email: <a href="mailto:hitesh@example.com">hitesh@example.com</a></li>
-                        <li>LinkedIn: <a href="#">linkedin.com/in/hitesh</a></li>
-                        <li><a href="hiteshkg26.pdf" download>Download resume (PDF)</a></li>
-                    </ul>
+                    <form class="contact-form" id="contactForm">
+                        <label>
+                            Your Name
+                            <input type="text" name="name" placeholder="Full name" required>
+                        </label>
+                        <label>
+                            Your Email
+                            <input type="email" name="email" placeholder="you@example.com" required>
+                        </label>
+                        <label>
+                            Message
+                            <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+                        </label>
+                        <button class="btn primary" type="submit">Send message</button>
+                    </form>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <label>Your Name<input type="text" placeholder="Your name" required></label>
-                    <label>Your Email<input type="email" placeholder="you@example.com" required></label>
-                    <label>Message<textarea placeholder="Tell me about your project" rows="4" required></textarea></label>
-                    <button class="btn btn-primary" type="submit">Send message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer class="site-footer">
-        <p>© 2026 Hitesh Kumar. Built with HTML/CSS.</p>
-    </footer>
+        <footer class="site-footer">
+            <p>© 2026 Hitesh Kumar — Built with care.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
